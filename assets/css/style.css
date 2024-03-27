@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+body {
+    font-family: "Lato", sans-serif;
+}
+/* --- Start Css Header --- >> */
+header {
+    position: absolute;
+    top: auto;
+    left: 50%;
+    width: 100%;
+    margin: 0 auto;
+    transform: translateX(-50%);
+    background-color: rgba(0,0,0,0.07);
+    padding: 16px 0px;
+}
+header .row {
+    display: grid;
+    grid-template-columns: 0.7fr 4fr 1fr;
+}
+header .row .site-logo img{
+    width: 140px;
+    height: 45px;
+    padding-top: 15px;
+}
+header .row .links-one ul{
+    list-style-type: none;
+}
+header .row .links-one ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+header .row .links-one ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+header .row .links-two ul{
+    list-style-type: none;
+}
+header .row .links-two ul li{
+    display: inline-block;
+    margin-right: 40px;
+}
+header .row .links-two ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 70px;
+    text-transform: uppercase;
+}
+/* --- Close Css Header --- >> */
+/*-- Start Css Hero Section  -----> */
+.hero-section {
+    background-image: url(../images/banner-home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    background-color: #00000054;
+    background-blend-mode: overlay;
+}
+.hero-section .hero-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 200px 75px 200px 45px;
+}
+.hero-section .hero-main .left {
+    max-width: 600px;
+}
+.hero-section .hero-main .left h1{
+    font-size: 66px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 79px;
+    padding-right: 30px;
+}
+.hero-section .hero-main .left h2{
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 39px;
+    padding: 20px 0px 40px 0px;
+}
+.hero-section .hero-main .left .left-btn {
+    display: flex;
+}
+.hero-section .hero-main .left .left-btn .btn-one{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 14px;
+    padding: 16px 28px;
+    background-color: #f5f7f9;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.hero-section .hero-main .left .left-btn .btn-two{
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+    line-height: 14px;
+    padding: 15px 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+/*-- Close Css Hero Section  -----> */
+/*-- Start Css Slider Logo Section  -----> */
+.slider-logo {
+    padding: 80px 0px 0px 0px;
+}
+.slider-logo .row {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    justify-items: center;
+}
+.row .slider-box img {
+    width: 150px;
+    height: 27px;
+    object-fit: contain;
+}
+/*-- Close Css Slider Logo Section  -----> */
+/*-- Start Css Section One -----> */
+.section-one {
+    padding: 80px 0px 120px 0px;
+}
+.section-one .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    justify-items: center;
+    margin: 0px 70px 0px 70px;
+}
+.section-one .row .box1{
+    background-image: url(../images/women-fashion-free-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 170px 0px 50px 40px;
+    background-blend-mode: overlay;
+    background-color: #0000008f;
+}
+.section-one .row .box-two{
+    background-image: url(../images/men-fashion-free-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 170px 0px 50px 40px;
+    background-blend-mode: overlay;
+    background-color: #0000008f;
+}
+.section-one .row .box-three{
+    background-image: url(../images/footwear-free-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 170px 0px 50px 40px;
+    background-blend-mode: overlay;
+    background-color: #0000008f;
+}
+.section-one .row .box1 h2{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 49px;
+    color:#ffffff;
+    padding-top: 100px;
+}
+.section-one .row .box1 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color:#ffffff;
+    padding: 0px 50px 30px 0px;
+}
+.section-one .row .box1 .btn-three{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 15px 28px;
+    border: none;
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+.section-one .row .box1 .btn-three:hover {
+    background-color: #000000;
+    color:#ffffff;
+    cursor: pointer;
+}
+/*-- Close Css Section One  -----> */
+/*-- Start Css Section Two  -----> */
+.section-two{
+    background-color: #F5F7F9;
+    padding: 120px 0px 80px 0px;
+}
+.section-two .two-main {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.section-two .two-main h1 {
+    font-size: 42px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 55px;
+}
+.section-two .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    grid-column-gap: 20px;
+}
+.section-two .product-r2{
+    padding-top: 50px;
+}
+.section-two .row .products img {
+    width: 100%;
+    height: auto;
+}
+.section-two .row .products .product-txt {
+    padding-top: 20px;
+}
+.section-two .row .products .product-txt  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 21px;
+    padding-bottom: 10px;
+}
+.section-two .row .products .product-txt p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #B7B8BA;
+    line-height: 18px;
+}
+/*-- Close Css Section Two ---> */
+/* Start Css Section Three --- >*/
+.section-three{
+    background-color: #F5F7F9;
+    padding: 80px 0px 50px 0px;
+}
+.section-three .three-main .box1 {
+    padding-right: 600px;
+    background-image: url(../images/banner-03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #0084d654;
+    background-blend-mode: overlay;
+    padding: 100px 50px 100px 100px;
+}
+.section-three .three-main .box1 h4{
+    font-size: 20px;
+    font-weight: 700;
+    color:#ffffff;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+.section-three .three-main .box1 h2{
+    font-size: 42px;
+    font-weight: 700;
+    color:#ffffff;
+    line-height: 55px;
+    padding-bottom: 20px;
+}
+.section-three .three-main .box1 p{
+    font-size: 16px;
+    font-weight: 400;
+    color:#ffffff;
+    line-height: 30px;
+    padding: 0px 600px 20px 0px;
+}
+.section-three .three-main .box1 h3{
+    font-size: 20px;
+    font-weight: 700;
+    color:#ffffff;
+    line-height: 24px;
+    padding-bottom: 60px;
+}
+.section-three .three-main .box1 .btn-three{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border: none;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: #000000;
+}
+.section-three .three-main .box1 .btn-three:hover{
+    background-color: #000000;
+    color:#ffffff;
+    cursor: pointer;
+}
+/* Close Css Section Three --- >*/
+/* Start Css Section Four --- >*/
+.section-four {
+    background-color: #F5F7F9;
+    padding: 80px 0px 130px 0px;
+}
+.section-four .row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.section-four .row .box1{
+    text-align: center;
+}
+.section-four .row .box1 img{
+    width: 100px;
+    height: 60px;
+    object-fit: contain;
+}
+.section-four .row .box1 .box-txt{
+    text-align: center;
+}
+.section-four .row .box1 .box-txt h3{
+    font-size: 18px;
+    font-weight: 700;
+    color:#000000;
+    line-height: 22px;
+    padding-top: 20px;
+}
+.section-four .row .box1 .box-txt p{
+    font-size: 16px;
+    font-weight: 400;
+    color:#333333;
+    line-height: 30px;
+    padding: 10px 30px 0px 30px;
+}
+/* Close Css Section Four --- >*/
+/* Start Css Section Five --- >*/
+.section-five {
+    border-top: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+.section-five .five-main .last-heading {
+    padding: 50px 0px 50px 0px;
+}
+.section-five .five-main .last-heading h1{
+    font-size: 26px;
+    font-weight: 700;
+    color:#000000;
+    line-height: 39px;
+    padding-left: 45px;
+    transition: all 1s ease;
+}
+.section-five .five-main .last-heading h1:hover{
+    color: #0075be;
+    cursor: pointer;
+}
+/* Close Css Section Five --- >*/
+/* Start Css Footer--- >*/
+footer {
+    padding: 80px 0px 50px 0px;
+}
+footer .row {
+  display: grid;
+  grid-template-columns: 1fr 0.7fr 0.7fr 0.7fr;
+  justify-items: center;
+  padding-bottom: 80px;
+}
+footer .row .box img{
+    width: 90px;
+    height: auto;
+    object-fit: contain;
+}
+footer .row .box .box1-txt p {
+    font-size: 22px;
+    font-weight: 700;
+    color:#000000;
+    line-height: 33px;
+    padding-top: 20px;
+}
+footer .row .box .box2-txt h2{
+    font-size: 22px;
+    font-weight: 700;
+    color:#000000;
+    line-height: 33px;
+    padding-top: 40px;
+}
+footer .row .box h2{
+    font-size: 22px;
+    font-weight: 400;
+    color:#000000;
+    line-height: 33px;
+    padding-bottom: 20px;
+}
+footer .row .box h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #818182;
+    line-height: 30px;
+    transition: 1s ease;
+}
+footer .row .box h4:hover{
+    color: #0075BE;
+    cursor: pointer;
+}
+footer .row .box input{
+    padding: 12px 40px 12px 10px;
+    margin-bottom: 35px;
+    border: 1px solid #E2E2E2;
+}
+footer .row .box a{
+    background-color: #0075BE;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    color: #ffffff;
+    padding: 15px 30px 15px 30px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+footer .footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #DDDDDD;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 50px 70px 0px 70px;
+}
+footer .footer-bottom .copyright p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+}
+footer .footer-bottom .social ul {
+    list-style-type: none;
+}
+footer .footer-bottom .social ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+footer .footer-bottom .social ul a{
+    color: #000000;
+    font-size: 20px;
+}
+/* Close Css Footer --- >*/
